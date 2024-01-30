@@ -3,29 +3,35 @@
 This repo has been updated to work with `Python v3.8` and up.
 
 ## How To Run
-1. Install `virtualenv`:
+
+1. Setup virtual env:
+
 ```
-$ pip install virtualenv
+$ python3 -m venv .venv
 ```
 
-2. Open a terminal in the project root directory and run:
+2. Then run the command:
+
 ```
-$ virtualenv env
+$ .venv\bin\activate
 ```
 
-3. Then run the command:
+2. Then run the command (Mac):
+
 ```
-$ .\env\Scripts\activate
+$ source .venv\bin\activate
 ```
 
-4. Then install the dependencies:
+3. Then install the dependencies:
+
 ```
-$ (env) pip install -r requirements.txt
+$ pip install -r requirements.txt
 ```
 
-5. Finally start the web server:
+4. Finally start the web server:
+
 ```
-$ (env) python app.py
+$ python3 app.py
 ```
 
 This server will start on port 5000 by default. You can change this in `app.py` by changing the following line to this:
